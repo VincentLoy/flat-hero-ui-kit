@@ -5,6 +5,10 @@ Flat Hero gives you some CSS &amp; HTML components to build websites. It's easy 
 
 NOTE : current version is still in developement. This version is not responsive yet.
 
+## Demo
+
+You can check the demo [here](http://albapasta.com/ressources/flat-hero-ui-kit/)
+
 ## dependencies & credits
 
 - [Font Awesome] (http://fortawesome.github.io/Font-Awesome/icons/)
