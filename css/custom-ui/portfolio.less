@@ -1,0 +1,49 @@
+.fl-portfolio{
+    
+    
+    &-box{
+        position: relative;
+        height: 260px;
+        width: 260px;
+        float: left;
+        margin: 10px;
+        overflow: hidden;
+        
+        
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .fl-portfolio-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 260px;
+            height: 260px;
+            
+            background: fade(@brand-primary, 60%);
+            
+            transform: scale(0);
+            
+            transition: 0.2s  cubic-bezier(0.42, 0.45, .22, 1) all;
+            
+            h2{
+                text-align: center;
+                line-height: 130px;
+                color: #fff;
+                font-weight: 300;
+            }
+            a{
+                margin: auto;
+                display: block;
+                width: 50%;
+            }
+        }
+        
+        &:hover .fl-portfolio-overlay{
+                transform: scale(1);
+            }
+    }
+}
