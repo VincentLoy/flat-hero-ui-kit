@@ -1,0 +1,90 @@
+/*
+* BUTTONS
+*/
+.fl-btn{
+    padding: 15px;
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.2s ease all;
+    overflow: hidden;
+    height: 25px;
+    cursor: pointer;
+    .borderRadius(2px);
+    
+    &-primary{ 
+        border-color: @brand-primary;
+        color: @brand-primary;
+        &:hover{
+           background: lighten(@brand-primary, 30%); 
+        }
+    }
+    &-success{ 
+        border-color: @brand-success;
+        color: @brand-success;
+        &:hover{
+           background: lighten(@brand-success, 30%); 
+        }
+    }
+    &-warning{ 
+        border-color: @brand-warning;
+        color: @brand-warning;
+        &:hover{
+           background: lighten(@brand-warning, 30%); 
+        }
+    }
+    &-info{ 
+        border-color: @brand-info;
+        color: @brand-info;
+        &:hover{
+           background: lighten(@brand-info, 30%);
+        }
+    }
+    &-alert{ 
+        border-color: @brand-alert;
+        color: @brand-alert;
+        &:hover{
+           background: lighten(@brand-alert, 30%); 
+        }
+    }
+    &-black{ 
+        border-color: #000;
+        color: #000;
+        &:hover{
+           background: fade(lighten(#000, 80%),60%); 
+        }
+    }
+    &-white{ 
+        border-color: #fff;
+        color: #fff;
+        &:hover{
+           background: fade(#fff, 30%); 
+        }
+    }
+    
+    
+    span{ /* Buttons with span into */
+        display: block;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        transition: 0.3s @cubicBezier all;
+    }
+    
+    span.fl-btn-hover{
+        transform: translateY(120%);   
+    }
+    
+    &:hover{
+        span.fl-btn-text{
+            transform: translateX(125%);   
+        }
+        span.fl-btn-hover{
+            transform: translateY(-25px);   
+        } 
+    }
+}

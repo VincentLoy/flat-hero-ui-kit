@@ -1,0 +1,90 @@
+/*
+* PROFILE STYLE
+*/
+.fl-profile{
+    
+    height: 500px;
+    width: 100%;
+    background: @gray-lighter;
+    position: relative;
+    .borderRadius(2px);
+    
+    .close-profile{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        a{ color: @gray; }
+    }
+    
+    section{
+        display: inline-table;
+        box-sizing: border-box;
+        height: auto;
+    }
+    
+    &-left{
+        width: 33.33%;
+        padding: 0;
+        
+        .fl-profile-img-container{
+            height: 170px;
+            padding: 10px 0;
+            .borderRadius(2px);
+            img{
+                display: block;
+                margin: auto;
+                width: 150px;
+                border-radius: 150px;
+                box-sizing: border-box;
+                border: 5px solid #fff;
+            }
+        }
+        
+        .fl-profile-description{
+            background: @gray-light;
+            height:  310px;
+            position: relative;
+            .borderRadius(0 2px 0 2px);
+            .fl-profile-triangle{
+                height: 0;
+                width: 0;
+                box-shadow: inset 0 1px 3px #000;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 20px solid @gray-light;
+                position: absolute;
+                top: -20px;
+                left: 44%;
+            }
+            
+            ul{
+                padding: 0;
+                margin: 0;
+                
+                
+                list-style-type: none;
+                li{
+                    color: #fff;
+                    text-align: center;
+                    padding: 10px 20px;
+                    
+                    h3{
+                        color: #fff;
+                        font-weight: 400;
+                    }
+                    span{
+                        padding: 0 10px 0 0;
+                    }
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &-right{
+        width: 66.66%;
+        float: right;
+        padding: 20px;
+    }
+}

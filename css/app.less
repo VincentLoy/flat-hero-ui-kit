@@ -1,0 +1,93 @@
+@import "custom-ui/custom-ui.less";
+
+body, html{
+    min-height: 100%;   
+}
+
+main{
+   #title{
+       padding: 25px 0;
+       margin: 25px 0;
+       background: @brand-alert;
+       border-radius: 2px;
+        h1,h2{
+            color:#fff;
+            text-align: center;
+            font-weight: 100;
+        }
+   } 
+}
+
+a{ text-decoration: none; }
+
+h2, h3{
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: @brand-alert;
+    text-transform: capitalize;
+}
+
+.wrapper{
+    width: 960px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+pre{
+    border-radius: 2px; 
+    margin: 20px 0;
+    padding: 25px;
+    background-color: #333f52;
+}
+
+section{
+    padding: 15px 0;
+    clear: both;
+}
+
+.colors{
+    clear: both;
+    .color-box{ 
+        width: 120px;
+        height: 120px;
+        float: left;
+        margin: 10px;
+        color: #fff;
+        .borderRadius(3px);
+        p{
+            text-align: center;
+            height: 20px;
+            margin: 0;
+            line-height: 110px;
+            font-weight: 300;
+            font-family: 'Ubuntu';
+            
+            font-size: 22px;
+        }
+        .var-name{
+            font-size: 13px;
+        }
+        
+    }
+    #brand-primary{ background: @brand-primary; }
+    #brand-success{ background: @brand-success; }
+    #brand-warning{ background: @brand-warning; }
+    #brand-info{ background: @brand-info; }
+    #brand-alert{ background: @brand-alert; }
+    #gray-darker{ background: @gray-darker; }
+    #gray-dark{ background: @gray-dark;  }
+    #gray{ background: @gray;  }
+    #gray-light{ background: @gray-light;  }
+    #gray-lighter{ background: @gray-lighter; color: #000; }
+}
+
+
+#buttons{ clear: both; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 959px) {
+    .wrapper{
+        width: 100%;   
+    }
+}
